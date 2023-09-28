@@ -41,13 +41,7 @@
     .titleInteractive p:hover{
         color: var(--accent-color-cyan);
     }
-    @media (max-width: 455px) {
-        .titleInteractive{
-            display: flex;
-            flex-direction: column;
-            gap: none;
-        }
-    }
+ 
     .bodyFirstPartContainer{
         display: flex;
         flex-direction: column;
@@ -102,11 +96,7 @@
         cursor: pointer;
         background: linear-gradient(50deg, var(--accent-color-blue), var(--accent-color-cyan));
     }
-    @media (max-width: 1000px) {
-        .bodyFirstPartText{
-            width: 100%;
-        }    
-    }
+
 
     .bodySecondPartContainer{
         padding: 4.5rem 4rem;
@@ -151,23 +141,6 @@
         margin-top: 3rem;
         gap: 6rem;
     }
-    @media (max-width: 1000px) {
-        .secondPartWrapper{
-            flex-direction: column;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-        }
-        .secondPartWrapper2{
-            flex-direction: column;
-            gap: 2rem;
-            justify-content: center;
-            align-items: center;
-        }
-        .cardSecondPart{
-            width: 100%;
-        }
-    }
     .thirdPartContainer{
         display: flex;
         align-items: center;
@@ -209,11 +182,6 @@
     }
     .thirdPartText > a:hover{
         color: white;
-    }
-    @media (max-width:1000px) {
-        .thirdPartContainer{
-            flex-direction: column;
-        }
     }
 .arrowRight{
     cursor: pointer;
@@ -268,11 +236,114 @@
     color: white;
     font-weight: 700;
 }
-@media (max-width: 1000px) {
+.cadasterAreaContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.cadasterAreaWrapper{
+    background-color: var(--primary-color-dark-blue-4);
+    padding: 3.5rem 3rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    width: 66.66%;
+    min-width: 300px;
+    box-shadow: 2px 2px 30px 2px var(--primary-color-dark-blue-3);
+    border-radius: 5px;
+    position: absolute;
+}
+.cadasterAreaWrapper > h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.cadasterAreaWrapper > p{
+    word-break: break-all;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 14px;
+}
+.cadasterBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.cadasterBar > input{
+    border-radius: 25px;
+    border: none;
+    width: 80%;
+    max-width: 600px;
+    max-height: 3rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.cadasterBar > button{
+    background: linear-gradient(50deg, var(--accent-color-cyan), var(--accent-color-blue));
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    height: 3rem;
+    width: 10rem;
+}
+.cadasterBar > button:hover{
+    cursor: pointer;
+    background: linear-gradient(50deg, var(--accent-color-blue), var(--accent-color-cyan));
+}
+
+@media (max-width: 1000px){
+    .bodyFirstPartText{
+        width: 100%;
+    }    
+    .secondPartWrapper{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .secondPartWrapper2{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardSecondPart{
+        width: 100%;
+    }
+    .thirdPartContainer{
+        flex-direction: column;
+    }
     .fourthPartContainer{
         flex-direction: column;
     }
     .fourthPartCard{
         max-width: fit-content;
+    }
+    .cadasterBar{
+        flex-direction: column;
+    }
+    .cadasterBar > input{
+        width: 100%;
+        max-width: 100%;
+    }
+    .cadasterBar  > button{
+        width: 100%;
+    }
+}
+@media (max-width: 455px) {
+    .titleInteractive{
+        display: flex;
+        flex-direction: column;
+        gap: none;
     }
 }
