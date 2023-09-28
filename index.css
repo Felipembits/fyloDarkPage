@@ -156,7 +156,7 @@ table {
         flex-direction: column;
         gap: 2rem;
         margin-top: 5rem;
-        background-color: var(--primary-color-dark-blue-2);
+        background-color: #181F2B;
     }
     .secondPartWrapper{
         display: flex;
