@@ -228,3 +228,51 @@
     background-image: url(./assets/arrow-circle-right-fill\ \(1\).png);
 }
 
+.fourthPartContainer{
+    display: flex;
+    justify-content: center;
+    padding: 4.5rem 4rem;
+    gap: 3rem;
+
+}
+.fourthPartCard{
+    background-color: var(--primary-color-dark-blue-4);
+    box-shadow: 2px 2px 20px 2px var(--primary-color-dark-blue-3);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 20.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.fourthPartCard > p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+    color: var(--neutral-color-white);
+}
+.fourthPartCardWrapper{
+    display: flex;
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Relaway', sans-serif;
+    gap: 1rem;
+}
+.fourthPartCardWrapper img{
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+}
+.comments h5{
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+}
+@media (max-width: 1000px) {
+    .fourthPartContainer{
+        flex-direction: column;
+    }
+    .fourthPartCard{
+        max-width: fit-content;
+    }
+}
