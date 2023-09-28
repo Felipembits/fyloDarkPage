@@ -8,3 +8,45 @@
     --accent-color-blue: hsl(198, 60%, 50%);
     --neutral-color-white: hsl(0, 0%, 100%);
     }
+    body{
+        background-color: hsl(218, 28%, 13%);
+    }
+    p{
+        color: white;
+    }
+    header{
+        display: flex;
+        padding: 3.5rem 3rem;
+        justify-content: space-between;
+        align-items: end;
+        gap: 2rem;
+    }
+    header > img{
+        max-height: 2rem
+    }
+    .titleInteractive{
+        height: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .titleInteractive p{
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .titleInteractive p:hover{
+        color: var(--accent-color-cyan);
+    }
+    @media (max-width: 455px) {
+        .titleInteractive{
+            display: flex;
+            flex-direction: column;
+            gap: none;
+        }
+    }
+    
+    
