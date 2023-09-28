@@ -107,4 +107,65 @@
             width: 100%;
         }    
     }
+
+    .bodySecondPartContainer{
+        padding: 4.5rem 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .secondPartWrapper{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .cardSecondPart{
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+    .cardSecondPart > img{
+        max-height: 78px;
+        min-height: 78px;
+    }
+    .cardSecondPart > h1{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .cardSecondPart > p{
+        margin-top: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .secondPartWrapper2{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 3rem;
+        gap: 6rem;
+    }
+    @media (max-width: 1000px) {
+        .secondPartWrapper{
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .secondPartWrapper2{
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardSecondPart{
+            width: 100%;
+        }
+    }
     
